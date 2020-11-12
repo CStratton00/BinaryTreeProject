@@ -36,8 +36,7 @@ public:
             node->left = nullptr;
             node->right = nullptr;
             return node;
-        }
-        else {
+        } else {
             if (data < node->data)
                 node->left = insert(node->left, data);
             else
@@ -108,8 +107,7 @@ public:
                 if (target < node->data) {
                     count++;
                     return(search(node->left, target));
-                }
-                else {
+                } else {
                     count++;
                     return(search(node-> right, target));
                 }
